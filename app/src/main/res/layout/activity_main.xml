@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team A"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="00"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        />
+    <Button
+        android:id="@+id/highest_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+3 Points"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:onClick="highestPoint"
+        />
+    <Button
+        android:id="@+id/second_highest_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+2 Points"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:onClick="secondHighestPoint"
+        />
+    <Button
+        android:id="@+id/lowest_point"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Free Throw"
+        android:layout_marginBottom="15dp"
+        android:textAllCaps="false"
+        android:onClick="lowestPoint"
+        />
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:onClick="resetPoint"
+        />
+
+</LinearLayout>
